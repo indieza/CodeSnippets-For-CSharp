@@ -13,11 +13,6 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>type</ID>
-					<ToolTip>Property type</ToolTip>
-					<Default>string[]</Default>
-				</Literal>
-				<Literal>
 					<ID>name</ID>
 					<ToolTip>Variable name</ToolTip>
 					<Default>name</Default>
@@ -28,7 +23,8 @@
 					<Default>' '</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[$type$ $name$ = Console.ReadLine().Split(new[] {$spliter$}, StringSplitOptions.RemoveEmptyEntries);]]>
+			<Code Language="csharp"><![CDATA[string[] $name$ = Console.ReadLine()
+				.Split(new[] {$spliter$}, StringSplitOptions.RemoveEmptyEntries);$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

@@ -7,7 +7,7 @@
 			<Description>Code snippet for selecting numbers</Description>
 			<Author>Microsoft Corporation</Author>
 			<SnippetTypes>
-				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
 			</SnippetTypes>
 		</Header>
 		<Snippet>
@@ -15,7 +15,7 @@
 				<Literal>
 					<ID>type</ID>
 					<ToolTip>Property type</ToolTip>
-					<Default>string[]</Default>
+					<Default>int</Default>
 				</Literal>
 				<Literal>
 					<ID>name</ID>
@@ -28,10 +28,10 @@
 					<Default>' '</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[$type$[] $name$ = Console.ReadLine()
-			.Split(new[] {$spliter$}, StringSplitOptions.RemoveEmptyEntries)
-			.Select($type$.Parse)
-			.ToArray();]]>
+			<Code Language="csharp"><![CDATA[ $type$[] $name$ = Console.ReadLine()
+				 .Split(new[] {$spliter$}, StringSplitOptions.RemoveEmptyEntries)
+				 .Select($type$.Parse)
+				 .ToArray();$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
