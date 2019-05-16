@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>New Dictionary</Title>
+			<Shortcut>dic</Shortcut>
+			<Description>Code snippet for Creating New Dictionary</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type1</ID>
+					<ToolTip>First Type</ToolTip>
+					<Default>string</Default>
+				</Literal>
+				<Literal>
+					<ID>type2</ID>
+					<ToolTip>Second Type</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name</ToolTip>
+					<Default>name</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[Dictionary<$type1$, $type2$> $name$ = new Dictionary<$type1$, $type2$>();$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
