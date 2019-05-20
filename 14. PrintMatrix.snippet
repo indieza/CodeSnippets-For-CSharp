@@ -2,9 +2,9 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>New Queue</Title>
-			<Shortcut>queue</Shortcut>
-			<Description>Code snippet for Creating New Queue</Description>
+			<Title>Print Matrix</Title>
+			<Shortcut>printmatrix</Shortcut>
+			<Description>Code snippet for Printing Matrix</Description>
 			<Author>Microsoft Corporation</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -23,12 +23,22 @@
 					<Default>name</Default>
 				</Literal>
 				<Literal>
-					<ID>elements</ID>
-					<ToolTip>Elements</ToolTip>
-					<Default>elements</Default>
+					<ID>separator</ID>
+					<ToolTip>Separator</ToolTip>
+					<Default>" "</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[Queue<$type$> $name$ = new Queue<$type$>($elements$);$end$]]>
+			<Code Language="csharp"><![CDATA[for (int row = 0; row < rows; row++)
+            {
+                List<$type$> currentRow = new List<$type$>();
+
+                for (int col = 0; col < cols; col++)
+                {
+                    currentRow.Add($name$[row, col]);
+                }
+
+                Console.WriteLine(string.Join($separator$, currentRow));
+            }$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

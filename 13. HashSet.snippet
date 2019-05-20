@@ -2,9 +2,9 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>New List</Title>
-			<Shortcut>list</Shortcut>
-			<Description>Code snippet for Creating New List</Description>
+			<Title>New HashSet</Title>
+			<Shortcut>hashset</Shortcut>
+			<Description>Code snippet for Creating New HashSet</Description>
 			<Author>Microsoft Corporation</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,8 +14,8 @@
 			<Declarations>
 				<Literal>
 					<ID>type</ID>
+					<ToolTip>First Type</ToolTip>
 					<Default>string</Default>
-					<ToolTip>Type</ToolTip>
 				</Literal>
 				<Literal>
 					<ID>name</ID>
@@ -28,7 +28,7 @@
 					<Default>elements</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[List<$type$> $name$ = new List<$type$>($elements$);$end$]]>
+			<Code Language="csharp"><![CDATA[HashSet<$type$> $name$ = new HashSet<$type$>($elements$);$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

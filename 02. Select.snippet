@@ -28,7 +28,7 @@
 					<Default>' '</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[ $type$[] $name$ = Console.ReadLine()
+			<Code Language="csharp"><![CDATA[ $type$[] $name$= Console.ReadLine()
 				 .Split(new[] {$spliter$}, StringSplitOptions.RemoveEmptyEntries)
 				 .Select($type$.Parse)
 				 .ToArray();$end$]]>
