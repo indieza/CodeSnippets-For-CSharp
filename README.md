@@ -20,7 +20,7 @@ Also you can open every .snippet file in Notpad and see the tag
 ```C#
 Edit Snippet Shortcut
 
-<Shortcut>Some Name Here</Shortcut?
+<Shortcut>Your Name Here</Shortcut?
 ```
 
 ## Save And Test 
