@@ -13,7 +13,7 @@ After that press TAB two times and love the magic :)
 
 Also you can open every .snippet file in Notpad and see the tag
 
----<Shortcut><\Shortcut>---
+/*<Shortcut><\Shortcut>*/
 
 There you can write your own shortcut.
 When you do that you should save the file and go back to Visual Studio and try to type your new shortcut and press the TAB button two times.
