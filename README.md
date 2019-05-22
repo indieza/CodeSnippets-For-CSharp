@@ -8,7 +8,7 @@ Download the .snippet files and paste them in that directory.
 D:\Documents\Visual Studio 2019\Code Snippets\Visual C#\My Code Snippets
 
 ## Testing
-After that strat Visual Studio and write something like that:
+After that start Visual Studio and write something like that:
  
 printmatrix
 
@@ -16,8 +16,6 @@ After that press TAB two times and love the magic :)
 
 ## Make Your Own Snippet Shortcut
 Also you can open every .snippet file in Notpad and see the tag
-
-## Usage
 
 ```C#
 Edit Snippet Shortcut
