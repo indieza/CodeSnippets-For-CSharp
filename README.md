@@ -27,4 +27,4 @@ There you can write your own shortcut.
 
 ## Save And Test 
 
-When you save the file and go back to Visual Studio and try to type your new shortcut and press the TAB button two times.
+When you save the file, go back to Visual Studio and try to type your new shortcut. Press the TAB button two times.
