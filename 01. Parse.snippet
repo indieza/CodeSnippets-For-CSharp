@@ -22,8 +22,13 @@
 					<ToolTip>Variable name</ToolTip>
 					<Default>name</Default>
 				</Literal>
+				<Literal>
+					<ID>item</ID>
+					<ToolTip>Item For Parsing</ToolTip>
+					<Default>Console.ReadLine()</Default>
+				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[$type$ $name$ = $type$.Parse(Console.ReadLine());$end$]]>
+			<Code Language="csharp"><![CDATA[$type$ $name$ = $type$.Parse(&item&);$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
