@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Connection String</Title>
+			<Shortcut>connectionstring</Shortcut>
+			<Description>Code snippet for connection string</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>db</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>DbName</Default>
+				</Literal>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Variable name</ToolTip>
+					<Default>ConnectionString</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[public const string $name$ =
+            "Server=DESKTOP-40U9D0R\\SQLEXPRESS;Database=$db$;Integrated Security=true";$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

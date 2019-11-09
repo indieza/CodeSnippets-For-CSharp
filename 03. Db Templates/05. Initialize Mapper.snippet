@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Initialize mapper</Title>
+			<Shortcut>initializemapper</Shortcut>
+			<Description>Code snippet for initializing mapper</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>profile</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>ProductShopProfile</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[Mapper.Initialize(x =>
+											{
+												x.AddProfile<$profile$>();
+											});$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

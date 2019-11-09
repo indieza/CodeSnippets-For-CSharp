@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Import XML</Title>
+			<Shortcut>importxml</Shortcut>
+			<Description>Code snippet for importing XML</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>Dto[]</Default>
+				</Literal>
+				<Literal>
+					<ID>RootAttribute</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>Attributes</Default>
+				</Literal>
+				<Literal>
+					<ID>dtoName</ID>
+					<ToolTip>Variable name</ToolTip>
+					<Default>nameDto</Default>
+				</Literal>
+				<Literal>
+					<ID>text</ID>
+					<ToolTip>Variable name</ToolTip>
+					<Default>xmlString</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[var xmlSerializer = new XmlSerializer(typeof($type$), new XmlRootAttribute("$RootAttribute$"));
+											 var $dtoName$ = ($type$)xmlSerializer.Deserialize(new StringReader($text$));$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

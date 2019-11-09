@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Export XML</Title>
+			<Shortcut>exportxml</Shortcut>
+			<Description>Code snippet for exporting XML</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>Dto[]</Default>
+				</Literal>
+				<Literal>
+					<ID>RootAttribute</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>Attributes</Default>
+				</Literal>
+				<Literal>
+					<ID>items</ID>
+					<ToolTip>Variable name</ToolTip>
+					<Default>items</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[var xmlSerializer = new XmlSerializer(typeof($type$), new XmlRootAttribute("$RootAttribute$"));
+
+   											 var sb = new StringBuilder();
+   											 var namespaces = new XmlSerializerNamespaces(new [] {XmlQualifiedName.Empty});
+   											 xmlSerializer.Serialize(new StringWriter(sb), $items$, namespaces);$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
