@@ -30,9 +30,9 @@
 			</Declarations>
 			<Code Language="csharp"><![CDATA[var xmlSerializer = new XmlSerializer(typeof($type$), new XmlRootAttribute("$RootAttribute$"));
 
-   											 var sb = new StringBuilder();
-   											 var namespaces = new XmlSerializerNamespaces(new [] {XmlQualifiedName.Empty});
-   											 xmlSerializer.Serialize(new StringWriter(sb), $items$, namespaces);$end$]]>
+var sb = new StringBuilder();
+var namespaces = new XmlSerializerNamespaces(new [] {XmlQualifiedName.Empty});
+xmlSerializer.Serialize(new StringWriter(sb), $items$, namespaces);$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
