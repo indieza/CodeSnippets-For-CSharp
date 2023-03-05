@@ -4,7 +4,7 @@
 		<Header>
 			<Title>Select</Title>
 			<Shortcut>select</Shortcut>
-			<Description>Code snippet for selecting numbers</Description>
+			<Description>Code snippet for split text and selecting numbers/items</Description>
 			<Author>Microsoft Corporation</Author>
 			<SnippetTypes>
 				<SnippetType>SurroundsWith</SnippetType>
@@ -28,7 +28,8 @@
 					<Default>' '</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[ $type$[] $name$= Console.ReadLine()
+			<Code Language="csharp">
+				<![CDATA[ $type$[] $name$= Console.ReadLine()
 				 .Split(new[] {$spliter$}, StringSplitOptions.RemoveEmptyEntries)
 				 .Select($type$.Parse)
 				 .ToArray();$end$]]>

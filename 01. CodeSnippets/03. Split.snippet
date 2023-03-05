@@ -4,7 +4,7 @@
 		<Header>
 			<Title>Split</Title>
 			<Shortcut>split</Shortcut>
-			<Description>Code snippet for spliting items</Description>
+			<Description>Code snippet for spliting text</Description>
 			<Author>Microsoft Corporation</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -28,7 +28,8 @@
 					<Default>Console.ReadLine()</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[string[] $name$= $item$
+			<Code Language="csharp">
+				<![CDATA[string[] $name$= $item$
 				.Split(new[] {$spliter$}, StringSplitOptions.RemoveEmptyEntries);$end$]]>
 			</Code>
 		</Snippet>

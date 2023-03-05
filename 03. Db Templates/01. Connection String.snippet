@@ -13,6 +13,11 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
+					<ID>server</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>ServerName</Default>
+				</Literal>
+				<Literal>
 					<ID>db</ID>
 					<ToolTip>Property type</ToolTip>
 					<Default>DbName</Default>
@@ -23,8 +28,9 @@
 					<Default>ConnectionString</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[public const string $name$ =
-            "Server=DESKTOP-40U9D0R\\SQLEXPRESS;Database=$db$;Integrated Security=true";$end$]]>
+			<Code Language="csharp">
+				<![CDATA[public const string $name$ =
+            "Server=$server$;Database=$db$;Integrated Security=true";$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
